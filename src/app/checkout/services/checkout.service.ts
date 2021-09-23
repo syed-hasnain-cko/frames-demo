@@ -25,7 +25,7 @@ export class CheckoutService {
   getDetails(id: string):Observable<any>{
     const url = `https://api.sandbox.checkout.com/payments/${id}`;
     const httpOptions = {
-      headers: new HttpHeaders({ 'Authorization': 'sk_test_0b9b5db6-f223-49d0-b68f-f6643dd4f808' })
+      headers: new HttpHeaders({ 'Authorization': '' })
     };
     return this.http.get<any>(url, httpOptions);
   }
